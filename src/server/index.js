@@ -29,8 +29,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 console.log(__dirname)
 
 app.get('/', function (req, res) {
-    res.sendFile('dist/index.html')
-    // res.sendFile(path.resolve('src/client/views/index.html'))
+    // res.sendFile('dist/index.html')
+    res.sendFile(path.resolve('src/client/views/index.html'))
 })
 
 app.get("/getApi", async (req, res) => {

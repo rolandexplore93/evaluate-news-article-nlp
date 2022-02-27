@@ -15,7 +15,7 @@ const handleSubmit = async (e) => {
     // If the url is not valid, notify the user
     if (!validUrltag.isUri(url)){
         url = "";
-        console.log("Please, enter a valid URL")
+        alert("Please, enter a valid URL")
         return
     }
 
