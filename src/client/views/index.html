@@ -3,12 +3,6 @@
     <head>
         <meta charset="utf-8">
         <title>Test</title>
-        <link rel="stylesheet" href="../../../dist/">
-        <!-- <link rel="stylesheet" href="/styles/resets.css">
-        <link rel="stylesheet" href="/styles/base.css">
-        <link rel="stylesheet" href="/styles/header.css">
-        <link rel="stylesheet" href="/styles/form.css">
-        <link rel="stylesheet" href="/styles/footer.css"> -->
     </head>
 
     <body>
@@ -24,15 +18,23 @@
 
         <main>
             <section>
-                <form class="" onsubmit="return handleSubmit(event)">
+                <form class="" onsubmit="return Client.handleSubmit(event)">
                     <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                    <input type="submit" id="btn-submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
                 </form>
             </section>
 
             <section>
                 <strong>Form Results:</strong>
-                <div id="results"></div>
+                <!-- <div id="results"> -->
+                <div class = "result">
+                    <div id = "score"></div>
+                    <div id = "agreement"></div>
+                    <div id = "subjectivity"></div>
+                    <div id = "confidence"></div>
+                    <div id = "irony"></div>
+                </div>
+                <!-- </div> -->
             </section>
         </main>
 
@@ -40,5 +42,19 @@
             <p>This is a footer</p>
         </footer>
 
+
+        <script>
+            // Check that service worker is supported
+            if ('serviceWorker' in navigator){
+                // Use window event to kwwp the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js').then(registration =>{
+                        console.log('SW registered successfuly: ', registration);
+                    });
+                });
+            } else {
+                console.log("Service Worker is not supported")
+            }
+        </script>
     </body>
 </html>
