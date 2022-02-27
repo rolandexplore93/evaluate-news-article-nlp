@@ -69,6 +69,7 @@ app.post("/getApi", async (req, res) => {
     res.status(200).json({
         status: "success",
         message: "post request received successfully!",
+        projectData
     });
 })
 

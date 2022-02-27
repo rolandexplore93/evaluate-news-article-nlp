@@ -10,6 +10,7 @@
     "build-dev": "webpack-dev-server --config webpack.dev.js --open",
     "build-prod": "webpack --config webpack.prod.js",
     "testing": "jest",
+    "clear": "jest --clearCache",
     "temp": "nodemon src/server/testfile.js"
   },
   "author": "",

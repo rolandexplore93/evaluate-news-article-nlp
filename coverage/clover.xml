@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1645946969878" clover="3.2.0">
-  <project timestamp="1645946969878" name="All files">
+<coverage generated="1645950623184" clover="3.2.0">
+  <project timestamp="1645950623184" name="All files">
     <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1" elements="9" coveredelements="9" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
     <file name="validateURL.js" path="C:\Users\K I N G S\Desktop\webprogramming\udacity-project\evaluate-news-article-nlp\src\client\js\validateURL.js">
       <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
