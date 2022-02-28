@@ -1,4 +1,5 @@
 {
+  "homepage": "https://rolandexplore93.github.io/evaluate-news-article-nlp/",
   "name": "evaluate-news-article-nlp",
   "version": "1.0.0",
   "description": "\"\"",
@@ -11,7 +12,9 @@
     "build-prod": "webpack --config webpack.prod.js",
     "testing": "jest",
     "clear": "jest --clearCache",
-    "temp": "nodemon src/server/testfile.js"
+    "temp": "nodemon src/server/testfile.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -31,6 +34,7 @@
     "@babel/preset-env": "^7.16.11",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.6.0",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^27.5.1",
     "mini-css-extract-plugin": "^2.5.3",
