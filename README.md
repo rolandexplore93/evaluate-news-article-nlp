@@ -1,4 +1,4 @@
-# Project Instructions
+# Evaluate News Article Natural Language Processing (NLP)
 
 ### Project link: [Live Here](https://rolandexplore93.github.io/evaluate-news-article-nlp/)
 ### Project link (Heroku): [Live Here](http://evaluate-news-article-nlp.herokuapp.com/)
